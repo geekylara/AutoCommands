@@ -1,6 +1,6 @@
 ## Auto Command Execution Script for Minecraft
 
-This Python script automates the execution of a specific command within Minecraft. The script utilizes the `pyautogui` library for simulating keyboard input and includes an alert feature using the `tkinter` library to notify the user that the command will be executed.
+This Python script automates the execution of a specific command within Minecraft. The script utilizes the `pyautogui` library for simulating keyboard input and includes an optional alert feature using the `tkinter` library to notify the user that the command will be executed.
 
 ### How it Works
 
@@ -18,8 +18,8 @@ This Python script automates the execution of a specific command within Minecraf
         ```
     - The script will wait for a few seconds to allow you to focus on the game chat.
 
-3. **Alert**
-    - A pop-up alert will notify you that the specified command will be executed in 10 seconds.
+3. **Alert (Optional)**
+    - A pop-up alert will notify you that the specified command will be executed in 10 seconds if the `SHOW_ALERT` variable is set to `True`.
 
 4. **Command Execution**
     - The script will then enter a loop, executing the specified command in the Minecraft chat every 60 seconds.
@@ -28,6 +28,15 @@ This Python script automates the execution of a specific command within Minecraf
 
 - Adjust the command to be executed by modifying the `command_to_execute` variable.
 - Modify the sleep durations to suit your specific requirements.
+
+### Optional Alert
+
+- Set the `SHOW_ALERT` variable to `True` or `False` to enable or disable the pop-up alert.
+
+```python
+# Enable or disable the pop-up alert
+SHOW_ALERT = True  # Set to True to enable, False to disable
+```
 
 ### Important Note
 
